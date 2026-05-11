@@ -54,8 +54,13 @@ export default function GravityForm({ onForceChange }: Props) {
       </button>
 
       <div className="mt-6 text-xl">
-        Erő: {force.toExponential(3)} N
-      </div>
+  Erő:{" "}
+  {force
+    .toExponential(3)
+    .replace("e-", " × 10⁻")
+    .replace("e+", " × 10")}
+  {" "}N
+</div>
     </div>
   );
 }
