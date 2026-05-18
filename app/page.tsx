@@ -13,13 +13,9 @@ export default function Page() {
     <main className="min-h-screen bg-gradient-to-b from-black to-gray-950 text-white p-10">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <h1 className="text-5xl font-extrabold text-cyan-400 mb-4">
-          Gravitációs Erő Projekt
+          Gravitációs Erő Szimulátor
         </h1>
 
-        <p className="text-gray-300 mb-10 text-center max-w-2xl">
-          Interaktív fizikai projekt TypeScript, Chart.js és Motion.dev
-          használatával.
-        </p>
 
         <div className="mb-8">
           <GravityForm onForceChange={setForce} />
