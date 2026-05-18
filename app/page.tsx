@@ -23,7 +23,7 @@ export default function Page() {
 
         <GravityChart force={force} />
 
-        <SpaceAnimation />
+        <SpaceAnimation force={force} />
 
         <div className="mt-12 bg-gray-900 p-6 rounded-2xl max-w-3xl">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">
