@@ -72,8 +72,9 @@ export default function GravityChart({ force }: Props) {
     };
   }, [force]);
 
-  const options = {
-    responsive: true,
+ const options = {
+  responsive: true,
+  maintainAspectRatio: false,
     plugins: {
       legend: {
         labels: {
@@ -110,7 +111,7 @@ export default function GravityChart({ force }: Props) {
   };
 
   return (
-    <div className="bg-gray-900 p-6 rounded-2xl w-full max-w-4xl mt-8 border border-cyan-500/20 shadow-2xl">
+    <div className="bg-gray-900 p-6 rounded-2xl w-full max-w-4xl h-[420px] mt-8 border border-cyan-500/20 shadow-2xl">
       <Line data={data} options={options} />
     </div>
   );
