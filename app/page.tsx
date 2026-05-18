@@ -30,9 +30,16 @@ export default function Page() {
             Newton gravitációs törvénye
           </h2>
 
-          <div className="text-lg mb-4">
-            F = G * (m1 * m2) / r^2
-          </div>
+          <div className="text-3xl mb-6 font-mono text-cyan-300 text-center">
+  F = G × <span className="inline-block align-middle">
+    <span className="block border-b border-cyan-300 px-2">
+      m₁ × m₂
+    </span>
+    <span className="block text-center">
+      r²
+    </span>
+  </span>
+</div>
 
           <p className="text-gray-300 leading-8">
             A gravitációs erő két test között egyenesen arányos a
