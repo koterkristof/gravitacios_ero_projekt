@@ -23,16 +23,23 @@ export default function Page() {
 
         <GravityChart force={force} />
 
-        <SpaceAnimation />
+        <SpaceAnimation force={force} />
 
         <div className="mt-12 bg-gray-900 p-6 rounded-2xl max-w-3xl">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4">
             Newton gravitációs törvénye
           </h2>
 
-          <div className="text-lg mb-4">
-            F = G * (m1 * m2) / r^2
-          </div>
+          <div className="text-3xl mb-6 font-mono text-cyan-300 text-center">
+  F = G × <span className="inline-block align-middle">
+    <span className="block border-b border-cyan-300 px-2">
+      m₁ × m₂
+    </span>
+    <span className="block text-center">
+      r²
+    </span>
+  </span>
+</div>
 
           <p className="text-gray-300 leading-8">
             A gravitációs erő két test között egyenesen arányos a
