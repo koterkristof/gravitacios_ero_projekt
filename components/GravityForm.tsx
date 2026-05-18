@@ -19,10 +19,28 @@ export default function GravityForm({ onForceChange }: Props) {
   }, [force, onForceChange]);
 
   const formatScientific = (value: number) => {
-    return value
-      .toExponential(3)
-      .replace("e-", " × 10⁻")
-      .replace("e+", " × 10^");
+    const superscriptMap: Record<string, string> = {
+      "0": "⁰",
+      "1": "¹",
+      "2": "²",
+      "3": "³",
+      "4": "⁴",
+      "5": "⁵",
+      "6": "⁶",
+      "7": "⁷",
+      "8": "⁸",
+      "9": "⁹",
+      "-": "⁻",
+    };
+
+    const [base, exponent] = value.toExponential(3).split("e");
+
+    const superscriptExponent = exponent
+      .split("")
+      .map((char) => superscriptMap[char] || char)
+      .join("");
+
+    return `${base} × 10${superscriptExponent}`;
   };
 
   return (
