@@ -64,11 +64,11 @@ const orbitSize = Math.min(
 
       {/* info */}
       <div className="absolute bottom-5 left-5 bg-black/60 border border-cyan-500/20 rounded-xl px-4 py-3">
-        <div className="text-sm text-gray-400">
+        <div className="text-sm text-gray-400 cursor-default">
           Orbit sebesség
         </div>
 
-        <div className="text-cyan-400 font-bold">
+        <div className="text-cyan-400 font-bold cursor-default">
           {duration.toFixed(2)} s / kör
         </div>
       </div>
