@@ -2,27 +2,27 @@
 
 export default function ProfileCard() {
   return (
-    <div className="bg-gray-900/80 backdrop-blur-lg border border-cyan-500/20 p-6 rounded-2xl w-80 shadow-[0_0_30px_rgba(34,211,238,0.2)]transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] animate-[float_4s_ease-in-out_infinite] border border-cyan-500/20 backdrop-blur-md bg-black/30">
+    <div className="bg-gray-900/80 backdrop-blur-lg border border-cyan-500/20 p-6 rounded-2xl w-80 shadow-[0_0_30px_rgba(34,211,238,0.2)]transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] animate-[float_4s_ease-in-out_infinite] border border-cyan-500/20 backdrop-blur-md bg-black/30 cursor-default">
       
       {/* Profil kép */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 cursor-default">
        
       </div>
 
       {/* Név */}
-      <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text text-center">
+      <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text text-center cursor-default">
         Koter Kristóf -
         Csendes Károly
       </h2>
 
       {/* Leírás */}
-      <p className="text-gray-400 text-center mt-2">
+      <p className="text-gray-400 text-center mt-2 cursor-default">
         App készítői<br />
         React • Next.js • Tailwind CSS
       </p>
 
       {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent my-6"></div>
+      <div className="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent my-6 cursor-default"></div>
     </div>
     
   );
