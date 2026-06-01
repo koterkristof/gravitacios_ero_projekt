@@ -10,7 +10,7 @@ export default function ProfileCard() {
       </div>
 
       {/* Név */}
-      <h2 className="text-2xl font-bold text-center text-cyan-400">
+      <h2 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text text-center">
         Koter Kristóf -
         Csendes Károly
       </h2>
