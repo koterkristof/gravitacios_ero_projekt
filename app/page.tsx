@@ -27,7 +27,7 @@ export default function Page() {
 
         <SpaceAnimation force={force} />
 
-        <div className="mt-12 bg-gray-900 p-6 rounded-2xl max-w-3xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20 cursor-default">
+        <div className="h-full bg-gray-900 p-6 rounded-2xl max-w-3xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20 cursor-default">
           <h2 className="text-2xl font-bold text-cyan-400 mb-4 cursor-default">
             Newton gravitációs törvénye
           </h2>
@@ -50,8 +50,7 @@ export default function Page() {
           </p>
 
         </div>
-
-         <div>
+        <div className="h-full">
             <ProfileCard />
         </div>  
       </div>
