@@ -5,17 +5,18 @@ import { useState } from "react";
 import GravityForm from "../components/GravityForm";
 import GravityChart from "../components/GravityChart";
 import SpaceAnimation from "../components/SpaceAnimation";
+import SpaceBackground from "../components/SpaceBackground";
 
 export default function Page() {
   const [force, setForce] = useState(0);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black to-gray-950 text-white p-10">
+    <main className="min-h-screen text-white p-10 relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
-        <h1 className="text-5xl font-extrabold text-cyan-400 mb-4">
+        <h1 className="text-5xl font-extrabold text-cyan-400 mb-4 drop-shadow-[0_0_20px_cyan]">
           Gravitációs Erő Szimulátor
         </h1>
-
+        <SpaceBackground />
 
         <div className="mb-8">
           <GravityForm onForceChange={setForce} />
