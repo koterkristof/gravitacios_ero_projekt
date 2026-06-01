@@ -27,7 +27,7 @@ const orbitSize = Math.min(
 );
 
   return (
-    <div className="relative w-full max-w-4xl h-[420px] bg-black rounded-2xl overflow-hidden mt-10 border border-cyan-500/20 shadow-2xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20">
+    <div className="relative w-full max-w-4xl h-[420px] bg-black rounded-2xl overflow-hidden mt-10 border border-cyan-500/20 shadow-2xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20 backdrop-blur-md bg-black/30">
       {/* csillag háttér */}
       <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-[length:24px_24px] opacity-30" />
 
