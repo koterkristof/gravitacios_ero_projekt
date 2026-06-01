@@ -42,8 +42,8 @@ npm run dev
 
 ## Készítők
 
-Koter Kristóf
-Csendes Károly
+Koter Kristóf - https://github.com/koterkristof
+Csendes Károly - https://github.com/csendes-karoly
 
 GitHub:
 https://github.com/koterkristof/gravitacios_ero_projekt
