@@ -6,13 +6,14 @@ import GravityForm from "../components/GravityForm";
 import GravityChart from "../components/GravityChart";
 import SpaceAnimation from "../components/SpaceAnimation";
 import SpaceBackground from "../components/SpaceBackground";
+import ProfileCard from "../components/ProfileCard";
 
 export default function Page() {
   const [force, setForce] = useState(0);
 
   return (
     <main className="min-h-screen text-white p-10 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto flex flex-col items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         <h1 className="text-5xl font-extrabold text-cyan-400 mb-4 drop-shadow-[0_0_20px_cyan]">
           Gravitációs Erő Szimulátor
         </h1>
@@ -47,7 +48,12 @@ export default function Page() {
             tömegeikkel és fordítottan arányos a köztük lévő távolság
             négyzetével.
           </p>
+
         </div>
+
+         <div>
+            <ProfileCard />
+        </div>  
       </div>
     </main>
   );
