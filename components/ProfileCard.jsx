@@ -22,7 +22,7 @@ export default function ProfileCard() {
       </p>
 
       {/* Divider */}
-      <div className="my-4 border-t border-gray-700"></div>
+      <div className="h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent my-6"></div>
     </div>
     
   );
