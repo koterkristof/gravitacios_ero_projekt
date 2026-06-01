@@ -111,7 +111,7 @@ export default function GravityChart({ force }: Props) {
   };
 
   return (
-    <div className="bg-gray-900 p-6 rounded-2xl w-full max-w-4xl h-[420px] mt-8 border border-cyan-500/20 shadow-2xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
+    <div className="bg-gray-900 p-6 rounded-2xl w-full max-w-4xl h-[420px] mt-8 border border-cyan-500/20 shadow-2xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20">
       <Line data={data} options={options} />
     </div>
   );
