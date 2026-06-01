@@ -50,7 +50,7 @@ export default function SpaceBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 "
+      className="fixed top-0 left-0 w-full h-full -z-10 fixed top-0 left-0 w-full h-full -z-10 border border-cyan-500/20 backdrop-blur-md bg-black/30"
     />
   );
 }
