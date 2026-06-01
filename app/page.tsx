@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <main className="min-h-screen text-white p-10 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start ">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start flex flex-col gap-10">
         <h1 className="text-5xl font-extrabold text-cyan-400 mb-4 drop-shadow-[0_0_20px_cyan]">
           Gravitációs Erő Szimulátor
         </h1>
