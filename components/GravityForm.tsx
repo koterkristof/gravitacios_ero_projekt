@@ -44,7 +44,7 @@ export default function GravityForm({ onForceChange }: Props) {
   };
 
   return (
-    <div className="bg-gray-900 p-6 rounded-2xl shadow-2xl w-full max-w-4xl border border-cyan-500/20 transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
+    <div className="bg-gray-900 p-6 rounded-2xl shadow-2xl w-full max-w-4xl border border-cyan-500/20 transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20">
       <h2 className="text-2xl font-bold mb-6 text-cyan-400 text-center">
         Gravitációs Erő Számítás
       </h2>
