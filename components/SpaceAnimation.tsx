@@ -7,24 +7,15 @@ type Props = {
 };
 
 export default function SpaceAnimation({ force }: Props) {
- const safeForce =
-  Number.isFinite(force) && force > 0
-    ? force
-    : 1;
+  const safeForce = Number.isFinite(force) && force > 0 ? force : 1;
 
-const visualForce = safeForce * 1e12;
+  const visualForce = safeForce * 1e12;
 
-const logForce = Math.log10(visualForce + 1);
+  const logForce = Math.log10(visualForce + 1);
 
-const duration = Math.max(
-  2,
-  12 - logForce
-);
+  const duration = Math.max(2, 12 - logForce);
 
-const orbitSize = Math.min(
-  320,
-  180 + logForce * 20
-);
+  const orbitSize = Math.min(320, 180 + logForce * 20);
 
   return (
     <div className="relative w-full max-w-4xl h-[420px] bg-black rounded-2xl overflow-hidden mt-10 border border-cyan-500/20 shadow-2xl transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.3)] border border-cyan-500/20 backdrop-blur-md bg-black/30">

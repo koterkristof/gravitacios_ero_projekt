@@ -94,9 +94,7 @@ export default function GravityForm({ onForceChange }: Props) {
       </div>
 
       <div className="mt-8 bg-black/40 rounded-xl p-5 text-center border border-cyan-500/20">
-        <div className="text-gray-400 mb-2 cursor-default">
-          Gravitációs erő
-        </div>
+        <div className="text-gray-400 mb-2 cursor-default">Gravitációs erő</div>
 
         <div className="text-3xl font-bold text-cyan-400 break-all cursor-default">
           {formatScientific(force)} N

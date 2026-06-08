@@ -33,26 +33,23 @@ export default function Page() {
           </h2>
 
           <div className="text-3xl mb-6 font-mono text-cyan-300 text-center cursor-default">
-  F = G × <span className="inline-block align-middle cursor-default">
-    <span className="block border-b border-cyan-300 px-2 drop-shadow-[0_0_20px_cyan] cursor-default">
-      m₁ × m₂
-    </span>
-    <span className="block text-center cursor-default">
-      r²
-    </span>
-  </span>
-</div>
+            F = G ×{" "}
+            <span className="inline-block align-middle cursor-default">
+              <span className="block border-b border-cyan-300 px-2 drop-shadow-[0_0_20px_cyan] cursor-default">
+                m₁ × m₂
+              </span>
+              <span className="block text-center cursor-default">r²</span>
+            </span>
+          </div>
 
           <p className="text-gray-300 leading-8 drop-shadow-[0_0_20px_cyan] cursor-default">
-            A gravitációs erő két test között egyenesen arányos a
-            tömegeikkel és fordítottan arányos a köztük lévő távolság
-            négyzetével.
+            A gravitációs erő két test között egyenesen arányos a tömegeikkel és
+            fordítottan arányos a köztük lévő távolság négyzetével.
           </p>
-
         </div>
         <div className="h-full">
-            <ProfileCard />
-        </div>  
+          <ProfileCard />
+        </div>
       </div>
     </main>
   );

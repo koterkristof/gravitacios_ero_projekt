@@ -20,7 +20,7 @@ ChartJS.register(
   PointElement,
   LineElement,
   Tooltip,
-  Legend
+  Legend,
 );
 
 type Props = {
@@ -45,9 +45,7 @@ export default function GravityChart({ force }: Props) {
       "-": "⁻",
     };
 
-    const [base, exponent] = value
-      .toExponential(2)
-      .split("e");
+    const [base, exponent] = value.toExponential(2).split("e");
 
     const superscriptExponent = exponent
       .split("")
@@ -72,9 +70,9 @@ export default function GravityChart({ force }: Props) {
     };
   }, [force]);
 
- const options = {
-  responsive: true,
-  maintainAspectRatio: false,
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         labels: {
@@ -83,8 +81,7 @@ export default function GravityChart({ force }: Props) {
       },
       tooltip: {
         callbacks: {
-          label: (ctx: any) =>
-            `${formatScientific(ctx.raw)} N`,
+          label: (ctx: any) => `${formatScientific(ctx.raw)} N`,
         },
       },
     },
@@ -99,8 +96,7 @@ export default function GravityChart({ force }: Props) {
       },
       y: {
         ticks: {
-          callback: (value: any) =>
-            formatScientific(Number(value)),
+          callback: (value: any) => formatScientific(Number(value)),
           color: "white",
         },
         grid: {
